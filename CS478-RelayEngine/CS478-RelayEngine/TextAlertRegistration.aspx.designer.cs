@@ -31,15 +31,6 @@ namespace RelayEngineWebsite {
         protected global::System.Web.UI.WebControls.Panel Panel1;
         
         /// <summary>
-        /// LogoImage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image LogoImage;
-        
-        /// <summary>
         /// Panel2 control.
         /// </summary>
         /// <remarks>
@@ -49,13 +40,22 @@ namespace RelayEngineWebsite {
         protected global::System.Web.UI.WebControls.Panel Panel2;
         
         /// <summary>
-        /// CheckBoxList1 control.
+        /// listCheckBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList CheckBoxList1;
+        protected global::System.Web.UI.WebControls.CheckBoxList listCheckBox;
+        
+        /// <summary>
+        /// SqlDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
         /// Panel3 control.
@@ -67,58 +67,58 @@ namespace RelayEngineWebsite {
         protected global::System.Web.UI.WebControls.Panel Panel3;
         
         /// <summary>
-        /// TextBox1 control.
+        /// phoneNumberBox1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox phoneNumberBox1;
         
         /// <summary>
-        /// TextBox2 control.
+        /// phoneNumberBox2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox phoneNumberBox2;
         
         /// <summary>
-        /// TextBox3 control.
+        /// phoneNumberBox3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox phoneNumberBox3;
         
         /// <summary>
-        /// TextBox4 control.
+        /// firstNameBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.TextBox firstNameBox;
         
         /// <summary>
-        /// TextBox5 control.
+        /// lastNameBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox5;
+        protected global::System.Web.UI.WebControls.TextBox lastNameBox;
         
         /// <summary>
-        /// TextBox6 control.
+        /// organizationCodeBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox6;
+        protected global::System.Web.UI.WebControls.TextBox organizationCodeBox;
         
         /// <summary>
         /// Panel4 control.
@@ -130,6 +130,15 @@ namespace RelayEngineWebsite {
         protected global::System.Web.UI.WebControls.Panel Panel4;
         
         /// <summary>
+        /// warningLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label warningLabel;
+        
+        /// <summary>
         /// submitButton control.
         /// </summary>
         /// <remarks>
@@ -139,13 +148,13 @@ namespace RelayEngineWebsite {
         protected global::System.Web.UI.WebControls.Button submitButton;
         
         /// <summary>
-        /// Button2 control.
+        /// removeAllButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button removeAllButton;
         
         /// <summary>
         /// Button3 control.

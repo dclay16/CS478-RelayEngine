@@ -18,8 +18,8 @@
     <div>
     
         <asp:Panel ID="Panel1" runat="server" style="text-align: center">
-            <asp:Image ID="LogoImage" runat="server" ImageUrl="~/Content/evansville_day_school.jpg" />
-            &nbsp;<br />
+            <img alt="" class="auto-style1" src="evansville_day_school.jpg" />
+            <br />
             <br />
             Select each list for which you wish to receive alerts. You may select more than one list.<br />
             <br />
@@ -29,39 +29,35 @@
         </asp:Panel>
     
     </div>
-        <asp:Panel ID="Panel2" runat="server" CssClass="textAlertListPanelClass" style="text-decoration: underline">
+        <asp:Panel ID="Panel2" runat="server" CssClass="textAlertListPanelClass">
             SMS Text Alert Lists<br />
-            <asp:CheckBoxList ID="CheckBoxList1" runat="server">
-                <asp:ListItem>School Cancellations/Delays</asp:ListItem>
-                <asp:ListItem>Upper School Sports</asp:ListItem>
-                <asp:ListItem>Lower School Sports</asp:ListItem>
-                <asp:ListItem>Upper School General Announcements</asp:ListItem>
-                <asp:ListItem>Lower School General Announcements</asp:ListItem>
-            </asp:CheckBoxList>
+            <asp:CheckBoxList ID="listCheckBox" runat="server" Font-Underline="False" CssClass="listCheckBox" Height="16px" Width="724px" />
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:EvansvilleDaySchoolDatabaseConnectionString %>" SelectCommand="SELECT [LIST_NAME] FROM [LIST]"></asp:SqlDataSource>
         </asp:Panel>
         <asp:Panel ID="Panel3" runat="server" Wrap="False">
             Cell Phone Number
-            <asp:TextBox ID="TextBox1" runat="server" MaxLength="3" Width="46px"></asp:TextBox>
-            <asp:TextBox ID="TextBox2" runat="server" MaxLength="3" Width="46px"></asp:TextBox>
-            <asp:TextBox ID="TextBox3" runat="server" MaxLength="4" Width="62px"></asp:TextBox>
+            <asp:TextBox ID="phoneNumberBox1" runat="server" MaxLength="3" Width="46px"></asp:TextBox>
+            <asp:TextBox ID="phoneNumberBox2" runat="server" MaxLength="3" Width="46px"></asp:TextBox>
+            <asp:TextBox ID="phoneNumberBox3" runat="server" MaxLength="4" Width="62px"></asp:TextBox>
             <br />
             First Name&nbsp;
-            <asp:TextBox ID="TextBox4" runat="server" CssClass="textBox"></asp:TextBox>
+            <asp:TextBox ID="firstNameBox" runat="server" CssClass="textBox"></asp:TextBox>
             <br />
             Last Name&nbsp;
-            <asp:TextBox ID="TextBox5" runat="server" CssClass="textBox" Wrap="False"></asp:TextBox>
+            <asp:TextBox ID="lastNameBox" runat="server" CssClass="textBox" Wrap="False"></asp:TextBox>
             <br />
             Organization Security Code
-            <asp:TextBox ID="TextBox6" runat="server" MaxLength="5" Width="72px"></asp:TextBox>
+            <asp:TextBox ID="organizationCodeBox" runat="server" MaxLength="5" Width="72px"></asp:TextBox>
         </asp:Panel>
         <asp:Panel ID="Panel4" runat="server" style="text-align: center; height: 64px">
+            <asp:Label ID="warningLabel" runat="server"></asp:Label>
             <br />
-            <asp:Button ID="submitButton" runat="server" Text="Submit" OnClick="Button1_Click" />
-            <asp:Button ID="Button2" runat="server" Text="Remove All" OnClick="Button2_Click" />
-            <asp:Button ID="Button3" runat="server" Text="Cancel" OnClick="Button3_Click" />
+            <asp:Button ID="submitButton" runat="server" Text="Submit" OnClick="submitButtonClick" />
+            <asp:Button ID="removeAllButton" runat="server" Text="Remove All" OnClick="removeAllClick" />
+            <asp:Button ID="Button3" runat="server" Text="Cancel" />
             <br />
-            <a href="SendMessage.aspx">Sender</a>
-            <a href="AdminSignIn.aspx">Admin</a>
+            <a href="~/SendMessage">Sender</a>
+            <a href="~/AdminSignIn">Admin</a>
             <br />
         </asp:Panel>
     </form>
