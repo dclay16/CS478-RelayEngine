@@ -169,6 +169,7 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="ManageListPage.aspx" />
     <Content Include="Organization Security Code Page.aspx" />
+    <Content Include="OrganizationManagement.aspx" />
     <Content Include="regConf.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -265,6 +266,13 @@
     </Compile>
     <Compile Include="Organization Security Code Page.aspx.designer.cs">
       <DependentUpon>Organization Security Code Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizationManagement.aspx.cs">
+      <DependentUpon>OrganizationManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrganizationManagement.aspx.designer.cs">
+      <DependentUpon>OrganizationManagement.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="regConf.aspx.cs">
